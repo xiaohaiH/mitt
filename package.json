@@ -1,6 +1,5 @@
 {
     "name": "@xiaohaih/mitt",
-    "type": "module",
     "version": "0.0.1",
     "description": "基于mitt, 实现了once事件监听",
     "main": "dist/index.cjs.js",
@@ -17,15 +16,21 @@
         },
         "./*": "./*"
     },
-    "private": false,
     "scripts": {
         "start": "npm run dev",
         "dev": "vite --host",
         "build": "vue-tsc && vite build",
         "preview": "vite preview",
+        "publishing": "pnpm publish --access public",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xiaohaiH/mitt"
+    },
+    "author": "xiaohai",
+    "license": "MIT",
     "dependencies": {
         "mitt": "^3.0.1"
     },
